@@ -29,7 +29,7 @@ def index():
   condition = f[0]['description']
 
 
-  key='AIzaSyA_MT9mmCxgQYDC6YDY6a7t7PRK4HN1oms'
+  key=[API KEY]
   origins = '45.616540, -73.625290'
   destinations = '45.499910, -73.570556'
   units = 'metric'
