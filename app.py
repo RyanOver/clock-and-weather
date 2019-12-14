@@ -29,9 +29,9 @@ def index():
   condition = f[0]['description']
 
 
-  key=[API KEY]
-  origins = '45.616540, -73.625290'
-  destinations = '45.499910, -73.570556'
+  key='[API KEY]'
+  origins = '[LONGITUDE], [LATITUDE]'
+  destinations = '[LONGITUDE], [LATITUDE]'
   units = 'metric'
   mode = 'transit'
   # Arrival time to be every day at 15:50
