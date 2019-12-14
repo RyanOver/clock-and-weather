@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Testing</title>
+</head>
+
+<body class="bg-secondary text-white text-center">
+  
+  <div class="mt-5">
+    {% for d in data %}
+    <h1>{{ d.date }}</h1><br>
+    <h2>{{ d.temp }}° {{ d.condition }}</h2><br>
+    
+    <h1 class="display-1" id="time" style="font-size: 1500%;"></h1><br>
+
+    <h3>Leave by {{ d.leave }} to get to Work on time via transit</h3>
+    {% endfor %}
+  </div>
+
+
+
+
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
